@@ -188,4 +188,62 @@ body textarea:required:valid {
   font-size: 18px;
   font-weight: bold; }
 
+.sub-menu-ul {
+  list-style: none;
+  background-color: #f6f6f6;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  border-radius: 10px; }
+  .sub-menu-ul li {
+    padding: 10px 20px;
+    border-bottom: 1px dashed #001a32;
+    width: 100%; }
+    .sub-menu-ul li:last-child {
+      border-bottom: 1px dashed transparent; }
+    .sub-menu-ul li i {
+      color: #ff3333; }
+    .sub-menu-ul li a {
+      display: inline-block;
+      width: 90%;
+      vertical-align: top;
+      color: #001a32;
+      padding-left: 10px; }
+
+.side-block {
+  background-color: #f6f6f6;
+  margin: 20px 0;
+  padding: 20px;
+  border-bottom: 5px solid #ccc; }
+  .side-block.news {
+    border-radius: 0 50px 0 0; }
+  .side-block.sales {
+    border-radius: 0 0 50px 0; }
+  .side-block h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold; }
+  .side-block .side-block-article {
+    border-bottom: 1px dashed #001a32;
+    margin: 10px 0; }
+    .side-block .side-block-article p {
+      margin: 0;
+      margin-bottom: 10px; }
+      .side-block .side-block-article p a {
+        color: #001a32; }
+    .side-block .side-block-article .mite {
+      color: #999;
+      font-size: 12px;
+      margin: 0; }
+  .side-block .side-block-all {
+    text-align: center;
+    margin: 0; }
+    .side-block .side-block-all a {
+      color: #001a32;
+      font-size: 25px;
+      text-decoration: underline; }
+      .side-block .side-block-all a:hover {
+        color: #ff0000; }
+
 /*# sourceMappingURL=main.css.map */
