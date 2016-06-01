@@ -1,0 +1,732 @@
+@import "bourbon/bourbon"
+
+html.js .loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+body
+	font-family: "Garamond", serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 1280px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+nav
+	height: 60px
+	background-color: #fff
+	line-height: 60px
+	text-align: center
+	font-size: 14px
+	min-width: 1280px
+	text-transform: uppercase
+	position: relative
+	z-index: 1
+	.logo-div
+		display: inline-block
+		float: left
+
+		img
+			padding-left: 20px
+			height: 60px
+	.menu
+		display: inline-block
+		ul
+			margin-top: 0
+			li
+				list-style: none
+				float: left
+				&:first-child a
+					border-left: 2px solid transparent
+				a
+					padding: 0 45px
+					border-left: 2px solid #4e4e4e
+					color: #4e4e4e
+					&:hover, &.active
+						color: #648a2d
+						text-decoration: none
+
+.main
+	background: url('../img/bg.png') no-repeat top center #fff
+	background-size: contain
+	.book
+		position: absolute
+		top: 9%
+		left: 1%
+		width: 20%
+
+	.txt
+		position: absolute
+		top: 5%
+		left: 45%
+		width: 25%
+
+	.sheet
+		position: absolute
+		top: 36px
+		right: 3%
+		width: 18%
+		z-index: 1
+
+	.on-table
+		position: absolute
+		top: 23%
+		right: 22%
+		width: 36%
+
+	.container
+		padding-top: 50%
+		width: 1024px
+		.desc
+			text-align: center
+			&:after
+				content: url(../img/pen-border-bottom.png)
+				position: relative
+				top: 10px
+
+			h1
+				font-size: 43px
+				font-style: italic
+				font-weight: 300
+				display: inline-block
+			
+			img
+				padding: 0 10px
+
+			p
+				display: inline-block
+				position: relative
+				top: 20px
+				text-align: left
+
+.carousel-div
+	background: url(../img/spot.png) no-repeat center center
+	background-size: 90%
+	margin-top: 50px
+
+	.container2
+		padding-top: 0
+		.slider-for
+			.carousel-elem
+				.elem-img-div
+					float: left
+
+				.elem-desc-div
+					padding-left: 40px
+					display: inline-block
+					width: 460px
+					outline: none
+
+					h2
+						font-size: 60px
+						font-style: italic
+						margin: 0
+						
+					p
+						margin: 0
+						margin-top: 30px
+						margin-bottom: 30px
+						font-size: 18px
+
+					a
+						color: #b23643
+						font-size: 18px
+						padding: 5px 10px
+						border: 1px solid #b23643
+						
+						&:hover, &:focus
+							background-color: #b23643
+							color: #F5E6CB
+							text-decoration: none
+
+.slick-arrow
+	position: absolute
+	top: 45%
+	background: none
+	border: none
+	color: transparent
+	outline: none
+
+.slick-prev
+	left: -70px
+	&:before
+		content: url(../img/arrow-prev.png)
+.slick-next
+	right: -70px
+	&:before
+		content: url(../img/arrow-next.png)
+
+.slider-nav
+	margin-top: 50px
+	.dot-elem-div
+		text-align: center
+		outline: none
+		&:hover a
+			color: #b23643
+			border-bottom: 1px dotted #b23643
+		&:hover
+			cursor: pointer
+
+		img
+			margin-bottom: 20px
+
+		a
+			font-size: 18px
+			border-bottom: 1px dotted #000
+			color: #000
+			pointer-events: none
+
+		&.slick-current a
+			color: #b23643
+			border-bottom: 1px transparent
+			&:after
+				content: url(../img/pen-red.png)
+				position: relative
+				left: -15px
+.footer-back
+	background-image: url(../img/footer-left-bg.png), url(../img/footer-right-bg.png)
+	background-position: bottom left, bottom right
+	background-repeat: no-repeat, no-repeat
+
+.footer
+	height: 200px
+	width: 100%
+	z-index: 0
+	
+	p
+		margin-left: 20px
+		color: #b6a17a
+		font-size: 18px
+		position: absolute
+		bottom: 0
+		img
+			padding-right: 10px
+
+.second-main
+	background: url(../img/second-top-bg.png) top center no-repeat
+	.second-book
+		top: 30px
+		left: 3%
+		width: 15%
+
+	.second-container
+		padding-top: 20px
+		position: relative
+		z-index: 1
+		text-align: center
+		.desc h1
+			display: block
+			margin: 0
+
+		.second-desc
+			width: 700px
+			padding-top: 40px
+			margin: 0 auto
+.main-section
+	text-align: center
+
+.menu-elem
+	margin: 0
+	list-style: none
+	width: 700px
+	margin: 0 auto
+	margin-top: 150px
+	li
+		float: left
+		margin: 0 60px
+		a
+			color: #000
+			border-bottom: 1px dotted #000
+			&.tv.active
+				border-bottom: 1px transparent
+				color: #b23643
+				&:before
+					background-position: 68px -121px
+				&:after
+					content: url(../img/pen-red.png)
+					position: absolute
+					left: 177px
+					top: 378px
+			&.pressa.active
+				border-bottom: 1px transparent
+				color: #b23643
+				&:before
+					background-position: -182px -121px
+				&:after
+					content: url(../img/pen-red.png)
+					position: absolute
+					left: 330px
+					top: 378px
+			&.radio.active
+				border-bottom: 1px transparent
+				color: #b23643
+				&:before
+					background-position: -411px -121px
+				&:after
+					content: url(../img/pen-red.png)
+					position: absolute
+					left: 484px
+					top: 378px
+			&.internet.active
+				border-bottom: 1px transparent
+				color: #b23643
+				&:before
+					background-position: -653px -121px
+				&:after
+					content: url(../img/pen-red.png)
+					position: absolute
+					left: 652px
+					top: 378px
+			&:hover
+				text-decoration: none
+				color: #b23643
+				border-bottom: 1px dotted #b23643
+			&:before
+				content: ''
+				background: url(../img/smi-icons-sprite.png) no-repeat
+				width: 200px
+				height: 120px
+				position: absolute
+			&.tv:before
+				background-position: 68px 0
+				left: 142px
+				top: 228px
+			&.tv:hover:before
+				background-position: 68px -121px
+			&.pressa:before
+				background-position: -182px 0
+				left: 298px
+				top: 228px
+			&.pressa:hover:before
+				background-position: -182px -121px
+			&.radio:before
+				background-position: -411px 0
+				left: 451px
+				top: 228px
+			&.radio:hover:before
+				background-position: -411px -121px
+			&.internet:before
+				background-position: -653px 0
+				left: 615px
+				top: 228px
+			&.internet:hover:before
+				background-position: -653px -121px
+
+.smi-section
+	padding-top: 100px
+	.col-xs-3
+		margin-bottom: 20px
+		a
+			color: #4e4e4e
+			text-decoration: underline
+			img
+				opacity: .5
+			&:hover
+				color: #b23643
+				& img
+					opacity: 1
+.about-section
+	.about-hr
+		margin: 30px 0
+	.first-p
+		width: 800px
+		margin: 0 auto
+		.first-img
+			display: table-cell
+			vertical-align: middle
+			img
+				padding: 20px
+		.first-text
+			display: table-cell
+			vertical-align: middle
+	.next-p
+		width: 800px
+		margin: 20px auto
+		.next-img
+			display: table-cell
+			vertical-align: middle
+			img
+				padding: 20px
+		.next-text
+			display: table-cell
+			vertical-align: middle
+			text-align: justify
+	h3
+		font-size: 24px
+		font-weight: normal
+		margin: 0 auto
+		display: block
+		width: 800px
+		span
+			font-weight: bold
+
+.gallery-section
+	margin-left: 70px
+	margin-top: 50px
+	.gal-elem
+		width: 250px
+		display: inline-block
+		margin: 20px
+		img
+			width: 100%	
+
+.ajax-div
+	background: url(../img/ajax-bg-spot.png) center center no-repeat
+	width: 300px
+	height: 130px
+	line-height: 130px
+	a
+		color: #4e4e4e
+		font-style: italic
+		font-size: 25px
+
+.add-comment-form
+	width: 600px
+	margin: 0 auto
+	.comment-name
+		width: 49%
+		border: 1px solid #dcc9a7
+		float: left
+		padding-left: 10px
+		outline: none
+		color: #b23643
+		&::-webkit-input-placeholder
+			color: #dcc9a7
+	.comment-theme
+		width: 49%
+		border: 1px solid #dcc9a7
+		float: right
+		padding-left: 10px
+		outline: none
+		color: #b23643
+		&::-webkit-input-placeholder
+			color: #dcc9a7
+	.comment-textarea
+		width: 100%
+		border: 1px solid #dcc9a7
+		margin: 10px 0 5px
+		padding-left: 10px
+		padding-top: 10px
+		outline: none
+		color: #b23643
+		&::-webkit-input-placeholder
+			color: #dcc9a7
+	.comment-input-capcha
+		width: 370px
+		float: left
+		border: 1px solid #dcc9a7
+		height: 38px
+		padding-left: 10px
+		outline: none
+		color: #b23643
+		&::-webkit-input-placeholder
+			color: #dcc9a7
+	.comment-capcha
+		position: relative
+		left: -9px
+	.comment-submit
+		width: 120px
+		margin: 0
+		position: relative
+		left: 9px
+		height: 38px
+		background: none
+		border: 1px solid #b23643
+		color: #b23643
+.add-comment
+	color: #4e4e4e
+	font-size: 25px
+	margin: 30px 0 10px
+
+.comment-txt
+	&:before
+		content: url(../img/comment-start.png)
+		position: relative
+		top: 60px
+		left: -450px
+	&:after
+		content: url(../img/comment-end.png)
+		position: relative
+		bottom: 30px
+		right: -520px
+	.about-hr
+		margin: 30px 0
+	p
+		text-align: left
+		margin: 0
+	.theme-txt
+		font-weight: bold
+		margin-bottom: 20px
+	.name-txt
+		text-align: right
+		font-size: 25px
+		font-style: italic
+		line-height: 20px
+		span
+			display: block
+			font-size: 14px
+.delivery
+	color: #4e4e4e
+	text-decoration: underline
+	display: inherit
+	margin-top: 30px
+	font-size: 22px
+	&:hover
+		color: #b23643
+
+.fancybox-skin
+	border-radius: 0
+	.fancybox-title-float-wrap
+		bottom: initial
+		.child
+			white-space: initial
+			border-radius: 0
+			background: #f9f9f9
+			color: #000
+			text-shadow: none
+			padding: 10px
+
+.fancybox
+	color: #000
+	&:hover
+		color: #000
+		opacity: .5
+
+.menu-shop
+	margin: 0
+	list-style: none
+	width: 700px
+	margin: 0 auto
+	margin-top: 110px
+	li
+		float: left
+		margin: 0 60px
+		a
+			border-bottom: 1px #000 dotted
+			color: #000
+			&:before
+				content: ''
+				background: url(../img/shop-icon-sprite.png) no-repeat
+				height: 120px
+				top: 260px
+				position: absolute
+			&.rus-roman:before
+				background-position: -18px 0
+				left: 277px
+				width: 100px
+			&.rus-roman.active
+				text-decoration: none
+				color: #b2364b
+				border-bottom: 1px transparent
+				&:before
+					background-position: -18px -134px
+				&:after
+					content: url(../img/pen-red.png)
+					position: absolute
+					left: 230px
+					top: 408px
+			&.for-kids:before
+				background-position: -146px 0
+				left: 477px
+				width: 132px
+			&.for-kids.active
+				text-decoration: none
+				color: #b2364b
+				border-bottom: 1px transparent
+				&:before
+					background-position: -146px -134px
+				&:after
+					content: url(../img/pen-red.png)
+					position: absolute
+					left: 446px
+					top: 408px
+			&.za-trez:before
+				background-position: -299px 0
+				left: 665px
+				width: 132px
+			&.za-trez.active
+				text-decoration: none
+				color: #b2364b
+				border-bottom: 1px transparent
+				&:before
+					background-position: -299px -134px
+				&:after
+					content: url(../img/pen-red.png)
+					position: absolute
+					left: 640px
+					top: 408px	
+			&.rus-roman:hover:before
+				background-position: -18px -134px
+			&.for-kids:hover:before
+				background-position: -146px -134px
+			&.za-trez:hover:before
+				background-position: -299px -134px
+			&:hover
+				text-decoration: none
+				color: #b2364b
+				border-bottom: 1px #b23643 dotted
+.books-block
+	margin-top: 190px
+	text-align: justify
+	.book-elem
+		display: inline-block
+		width: 193px
+		padding: 5px
+		text-align: left
+		vertical-align: top
+		margin-bottom: 100px
+		a
+			color: #000
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+			img
+				padding-bottom: 15px
+		p
+			display: inline-block
+		input
+			width: 25px
+			padding: 1px 5px
+			border: 1px solid #dcc9a7
+			color: #4e4e4e
+			margin-left: 10px
+		.price
+			color: #b23643
+			font-size: 22px
+			display: block
+			margin: 0
+			font-weight: bold
+			margin-bottom: 10px
+			& span
+				font-weight: normal
+		.cart-href
+			padding: 5px 10px
+			border: 1px solid #b23643
+			font-size: 20px
+			color: #b23643
+			font-weight: normal
+			text-decoration: none
+			&:hover
+				color: #fff
+				background-color: #b23643
+		.book-add-in-cart
+			position: absolute
+			font-style: italic
+			margin-top: 20px
+			p
+				display: block
+				margin: 0
+.one-book-block
+	margin-top: 220px
+	.book-img
+		float: left
+	.book-desc
+		float: right
+		width: 780px
+		text-align: left
+		h1
+			font-weight: bold
+			font-size: 18px
+			margin-top: 0
+		p
+			margin: 0
+			font-weight: normal
+			font-size: 14px
+		.quote
+			margin: 20px 0
+			color: #999
+			font-style: italic
+			span
+				font-weight: bold
+				color: #000
+				display: block
+				font-size: 18px
+
+		p
+			display: inline-block
+		input
+			width: 25px
+			padding: 1px 5px
+			border: 1px solid #dcc9a7
+			color: #4e4e4e
+			margin-left: 10px
+		.price
+			color: #b23643
+			font-size: 22px
+			display: block
+			margin: 0
+			font-weight: bold
+			margin-bottom: 10px
+			& span
+				font-weight: normal
+		.cart-href
+			padding: 5px 10px
+			border: 1px solid #b23643
+			font-size: 20px
+			color: #b23643
+			font-weight: normal
+			text-decoration: none
+			&:hover
+				color: #fff
+				background-color: #b23643
+		.book-add-in-cart
+			font-style: italic
+			float: left
+			position: relative
+			top: 64px
+			left: 30px
+			p
+				display: block
+				margin: 0
+			a
+				color: #000
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+		.shop-block
+			display: inline-block
+			float: left
+.one-book-back
+	position: absolute
+	right: 0
+	bottom: -20px
+	background: url(../img/ajax-bg-spot.png) center center no-repeat
+	background-size: 100%
+	width: 150px
+	height: 65px
+	line-height: 65px
+	font-size: 20px
+	color: #000
+	font-style: italic

@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "GeometriaRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GeometriaRegular/GeometriaRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/GeometriaRegular/GeometriaRegular.woff") format("woff"), url("../fonts/GeometriaRegular/GeometriaRegular.ttf") format("truetype"); }
+@font-face {
+  font-family: "FregatRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/FregatRegular/FregatRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/FregatRegular/FregatRegular.woff") format("woff"), url("../fonts/FregatRegular/FregatRegular.ttf") format("truetype"); }
+@font-face {
+  font-family: "GeometriaLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GeometriaLight/GeometriaLight.eot?#iefix") format("embedded-opentype"), url("../fonts/GeometriaLight/GeometriaLight.woff") format("woff"), url("../fonts/GeometriaLight/GeometriaLight.ttf") format("truetype"); }
+@font-face {
+  font-family: "GeometriaHeavyItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GeometriaHeavyItalic/GeometriaHeavyItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GeometriaHeavyItalic/GeometriaHeavyItalic.woff") format("woff"), url("../fonts/GeometriaHeavyItalic/GeometriaHeavyItalic.ttf") format("truetype"); }
+@font-face {
+  font-family: "GeometriaHeavy";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GeometriaHeavy/GeometriaHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/GeometriaHeavy/GeometriaHeavy.woff") format("woff"), url("../fonts/GeometriaHeavy/GeometriaHeavy.ttf") format("truetype"); }
+@font-face {
+  font-family: "GeometriaMedium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GeometriaMedium/GeometriaMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GeometriaMedium/GeometriaMedium.woff") format("woff"), url("../fonts/GeometriaMedium/GeometriaMedium.ttf") format("truetype"); }
+@font-face {
+  font-family: "GeometriaBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GeometriaBold/GeometriaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GeometriaBold/GeometriaBold.woff") format("woff"), url("../fonts/GeometriaBold/GeometriaBold.ttf") format("truetype"); }
