@@ -149,15 +149,16 @@ body textarea:required:valid {
 .time {
   color: #fff;
   position: absolute;
-  right: -190px;
+  right: 0px;
   top: 0;
+  width: 40px;
   background-color: #ff3333;
   font-size: 18px;
   height: 112px;
   transition: all 0.2s;
   -webkit-transition: all 0.2s; }
   .time.active {
-    right: 0; }
+    width: 240px; }
   .time:before {
     content: "​";
     display: inline-block;
