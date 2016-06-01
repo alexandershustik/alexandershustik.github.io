@@ -47,7 +47,8 @@ body textarea:required:valid {
 .nav-section {
   background-color: #001a32;
   border-bottom: 5px solid #001223;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .logo-div {
   display: inline-block; }
