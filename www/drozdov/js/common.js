@@ -46,8 +46,8 @@ $(window).load(function() {
 
 });
 
-$( document ).ready(function() {
 
+$(document).ready(function(){
 	$('.slider-for').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -63,11 +63,15 @@ $( document ).ready(function() {
 		centerMode: false,
 		focusOnSelect: true
 	});
-	$(".fancybox").attr('rel', 'gallery').fancybox();
-	
+
 	$('.gallery-section').masonry({
 		itemSelector: '.gal-elem'
 	});
+
+	
+	$(".fancybox").attr('rel', 'gallery').fancybox();
+
+
 
 });
 

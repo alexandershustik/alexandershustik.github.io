@@ -1,7 +1,7 @@
 <?php
-	$config['smtp_username'] = '';  //Смените на имя своего почтового ящика.
-	$config['smtp_port']	 = ''; // Порт работы. Не меняйте, если не уверены.
-	$config['smtp_host'] = ''; //сервер для отправки почты
+	$config['smtp_username'] = 'alexander.shustik@yandex.ru';  //Смените на имя своего почтового ящика.
+	$config['smtp_port']	 = '465'; // Порт работы. Не меняйте, если не уверены.
+	$config['smtp_host'] = 'ssl://smtp.yandex.ru'; //сервер для отправки почты
 	$config['smtp_password'] = '';  //Измените пароль
 	$config['smtp_debug']	= true;  //Если Вы хотите видеть сообщения ошибок, укажите true вместо false
 	$config['smtp_charset']  = 'utf-8';	//кодировка сообщений. (или UTF-8, итд)
@@ -105,12 +105,21 @@ function server_parse($socket, $response, $line = __LINE__) {
 
 $method = $_SERVER['REQUEST_METHOD'];
 
+function clean($value = "") {
+    $value = trim($value);
+    $value = stripslashes($value);
+    $value = strip_tags($value);
+    $value = htmlspecialchars($value);
+    
+    return $value;
+}
+
 //Script Foreach
 $c = true;
 if ( $method === 'POST' ) {
 
-
 	foreach ( $_POST as $key => $value ) {
+		clean($value);
 		if ( $value != "") {
 			$message .= "
 			" . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
@@ -145,6 +154,6 @@ function adopt($text) {
 	return '=?UTF-8?B?'.base64_encode($text).'?=';
 }
 
-smtpmail('', "Вопрос", $message, $headers);
+smtpmail('alexandershustik@gmail.com', "Вопрос", $message, $headers);
 
 ?>

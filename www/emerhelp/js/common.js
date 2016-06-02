@@ -10,19 +10,39 @@ $(function() {
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
 	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
+		
+		//проверка введенных данных
+
+		var $name = $('#name');
+		var $email = $('#email');
+		var $phone = $('#phone');
+		var $comment = $('#comment');
+		var $patternName = '^[а-яА-ЯёЁa-zA-Z]+$';
+		var $patternEmail = '^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$';
+		var $patternPhone = '^[0-9]+$';
+		var $patternComment = '^[а-яА-ЯёЁa-zA-Z0-9]+$';
+
+		if( 
+			$name.val() != '' &&
+			$name.val().search($patternName) == 0 &&
+			$phone.val() != '' &&
+			$phone.val().search($patternPhone) == 0
+		){
+			var th = $(this);
+			$.ajax({
+				type: "POST",
+				url: "mail.php", //Change
+				data: th.serialize()
+			}).done(function() {
+				alert("Спасибо, письмо отправлено!");
+				setTimeout(function() {
+					// Done Functions
+					th.trigger("reset");
+				}, 1000);
+			});
+			return false;
+		}
+		else alert('Проверьте правильность введенных данных');
 	});
 
 	//Chrome Smooth Scroll
@@ -91,14 +111,14 @@ $(document).ready(function(){
 						else if( compVal >= 51 && compVal <= 80 ) compVal = compVal * 650
 							else if( compVal >= 81 && compVal <= 120 ) compVal = compVal * 600
 
-								if( servVal >=1 && servVal <= 3 ) servVal = servVal * 4000
-									else if( servVal >= 4 && servVal <= 6 ) servVal = servVal * 3500
-										else if( servVal >= 7 && servVal <= 12 ) servVal = servVal * 3200
+		if( servVal >=1 && servVal <= 3 ) servVal = servVal * 4000
+			else if( servVal >= 4 && servVal <= 6 ) servVal = servVal * 3500
+				else if( servVal >= 7 && servVal <= 12 ) servVal = servVal * 3200
 
-											priceVal = compVal + servVal
-										$("#priceInput").val(priceVal)
+		priceVal = compVal + servVal
+		$("#priceInput").val(priceVal)
 
-									});
+		});
 
 	$("#forma").validate({
 
@@ -111,11 +131,13 @@ $(document).ready(function(){
 			},
 
 			email:{
+				required: true,
 				minlength: 6,
 				maxlength: 30,
 				email: true
 			},
 			phone:{
+				required: true,
 				minlength: 10,
 				maxlength: 12,
 				number: true

@@ -64,20 +64,24 @@ nav
 	.menu
 		display: inline-block
 		ul
+			margin: 0
+			padding: 0
 			margin-top: 0
-			li
-				list-style: none
-				float: left
+			list-style: none
+			li	
+				display: inline-block
 				&:first-child a
-					border-left: 2px solid transparent
+					border-left: 1px solid transparent
 				a
 					padding: 0 45px
-					border-left: 2px solid #4e4e4e
+					border-left: 1px solid #4e4e4e
 					color: #4e4e4e
 					&:hover, &.active
-						color: #648a2d
+						color: #fff
 						text-decoration: none
-
+						background: #b23643
+						padding: 22px 45px
+						border-left: 1px solid transparent
 .main
 	background: url('../img/bg.png') no-repeat top center #fff
 	background-size: contain
@@ -411,7 +415,12 @@ nav
 		color: #4e4e4e
 		font-style: italic
 		font-size: 25px
-
+		&:hover
+			color: #999
+			text-decoration: none
+.ajax-div-shop
+	a
+		padding: 0 0 0 60px
 .add-comment-form
 	width: 600px
 	margin: 0 auto
@@ -465,6 +474,10 @@ nav
 		background: none
 		border: 1px solid #b23643
 		color: #b23643
+		&:hover
+			background-color: #b23643
+			color: #F5E6CB
+			text-decoration: none
 .add-comment
 	color: #4e4e4e
 	font-size: 25px
