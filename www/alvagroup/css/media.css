@@ -74,3 +74,21 @@
 @media only screen and (min-width : 1200px) {
 
 }
+
+@media only screen and (min-width : 1360px) {
+	.menu-div .wrapper ul{
+		margin: 0 90px;
+	}
+}
+
+@media only screen and (min-width : 1570px) {
+	.time {
+	    width: 240px;
+	}
+}
+
+@media only screen and (min-width : 1770px) {
+	.menu-div .wrapper ul{
+		margin: 0 180px;
+	}
+}

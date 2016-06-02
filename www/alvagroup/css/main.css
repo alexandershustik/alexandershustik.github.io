@@ -45,9 +45,8 @@ body textarea:required:valid {
   display: none; }
 
 .content-wrapper {
-  width: 1200px;
-  margin: 0 auto;
-  position: relative; }
+  position: relative;
+  min-width: 1200px; }
 
 .nav-section {
   background-color: #001a32;
@@ -70,7 +69,9 @@ body textarea:required:valid {
       display: inline-block;
       margin: 0 10px;
       padding: 0;
-      font-size: 14px; }
+      font-size: 14px;
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s; }
       .menu-div .wrapper ul li {
         display: inline-block;
         padding: 42px 10px; }
@@ -166,8 +167,7 @@ body textarea:required:valid {
         transition: all 0.2s;
         -webkit-transition: all 0.2s; }
       .cart-div p a:hover, .cart-div p a:focus {
-        text-decoration: none;
-        color: #fe0000; }
+        text-decoration: none; }
         .cart-div p a:hover:after, .cart-div p a:focus:after {
           background: #fe0000;
           width: 100%; }
