@@ -44,11 +44,16 @@ body textarea:required:valid {
 .hidden {
   display: none; }
 
+.content-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative; }
+
 .nav-section {
   background-color: #001a32;
-  border-bottom: 5px solid #001223;
+  border-bottom: 5px solid #000d19;
   position: relative;
-  overflow: hidden; }
+  min-width: 1200px; }
 
 .logo-div {
   display: inline-block; }
@@ -63,9 +68,9 @@ body textarea:required:valid {
     .menu-div .wrapper ul {
       list-style: none;
       display: inline-block;
-      margin: 0 20px;
+      margin: 0 10px;
       padding: 0;
-      font-size: 18px; }
+      font-size: 14px; }
       .menu-div .wrapper ul li {
         display: inline-block;
         padding: 42px 10px; }
@@ -86,14 +91,14 @@ body textarea:required:valid {
           .menu-div .wrapper ul li a:hover, .menu-div .wrapper ul li a:focus {
             text-decoration: none; }
             .menu-div .wrapper ul li a:hover:after, .menu-div .wrapper ul li a:focus:after {
-              background: #ff0000;
+              background: #fe0000;
               width: 100%; }
 
 .order-div {
   display: inline-block; }
   .order-div p {
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
     display: inline-block;
     vertical-align: middle;
@@ -101,18 +106,20 @@ body textarea:required:valid {
 
 .order-button {
   color: #fff;
-  background-color: #ff0000;
-  border-bottom: 3px solid #cc0000;
+  background-color: #fe0000;
+  border-bottom: 3px solid #e50000;
   border-radius: 5px;
   display: block;
   padding: 5px 20px;
   margin: 10px 0 0;
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s; }
   .order-button:hover, .order-button:focus {
-    background-color: #cc0000;
+    background-color: #e50000;
     border-bottom: 3px solid transparent;
-    color: #e6e6e6;
+    color: #f2f2f2;
     text-decoration: none; }
 
 .cart-div {
@@ -120,7 +127,7 @@ body textarea:required:valid {
   vertical-align: middle;
   color: #fff;
   text-align: center;
-  margin: 0 0 0 30px;
+  margin: 0 0 0 10px;
   position: relative; }
   .cart-div label {
     position: relative;
@@ -139,11 +146,33 @@ body textarea:required:valid {
       color: #666; }
   .cart-div p {
     margin: 20px 0 0;
-    font-size: 18px;
+    font-size: 16px;
     display: inline-block;
     padding: 0; }
+    .cart-div p a {
+      color: #fff;
+      padding: 17px 0;
+      position: relative;
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s; }
+      .cart-div p a:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 5px;
+        bottom: -5px;
+        left: 0;
+        background: transparent;
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s; }
+      .cart-div p a:hover, .cart-div p a:focus {
+        text-decoration: none;
+        color: #fe0000; }
+        .cart-div p a:hover:after, .cart-div p a:focus:after {
+          background: #fe0000;
+          width: 100%; }
   .cart-div .price {
-    background-color: #003565;
+    background-color: #00274c;
     padding: 5px 10px;
     margin-left: 10px; }
 
@@ -152,12 +181,16 @@ body textarea:required:valid {
   position: absolute;
   right: 0px;
   top: 0;
-  width: 40px;
-  background-color: #ff3333;
+  width: 35px;
+  background-color: #ff1919;
   font-size: 18px;
-  height: 112px;
+  height: 111px;
   transition: all 0.2s;
-  -webkit-transition: all 0.2s; }
+  -webkit-transition: all 0.2s;
+  overflow: hidden;
+  border-bottom: 5px solid #e50000; }
+  .time:hover {
+    background-color: #e50000; }
   .time.active {
     width: 240px; }
   .time:before {
@@ -167,9 +200,22 @@ body textarea:required:valid {
     vertical-align: middle; }
   .time i {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 5px;
     vertical-align: middle; }
   .time p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px; }
+
+.large-time {
+  display: inline-block;
+  color: #fff;
+  margin: 0 20px; }
+  .large-time i {
+    display: inline-block;
+    padding: 0 10px;
+    vertical-align: middle; }
+  .large-time p {
     display: inline-block;
     vertical-align: middle;
     margin: 0 10px; }
@@ -202,7 +248,7 @@ body textarea:required:valid {
     .sub-menu-ul li:last-child {
       border-bottom: 1px dashed transparent; }
     .sub-menu-ul li i {
-      color: #ff3333; }
+      color: #ff1919; }
     .sub-menu-ul li a {
       display: inline-block;
       width: 90%;
@@ -244,6 +290,6 @@ body textarea:required:valid {
       font-size: 25px;
       text-decoration: underline; }
       .side-block .side-block-all a:hover {
-        color: #ff0000; }
+        color: #fe0000; }
 
 /*# sourceMappingURL=main.css.map */

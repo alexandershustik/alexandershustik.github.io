@@ -45,13 +45,17 @@ body textarea:required:valid
 	display: none
 
 $black-blue: #001a32
-$red: #ff0000
+$red: #fe0000
 
+.content-wrapper
+	width: 1200px
+	margin: 0 auto
+	position: relative
 .nav-section
 	background-color: $black-blue
-	border-bottom: 5px solid darken( $black-blue, 3% )
+	border-bottom: 5px solid darken( $black-blue, 5%)
 	position: relative
-	overflow: hidden
+	min-width: 1200px
 .logo-div
 	display: inline-block
 	img
@@ -64,9 +68,9 @@ $red: #ff0000
 		ul
 			list-style: none
 			display: inline-block
-			margin: 0 20px
+			margin: 0 10px
 			padding: 0
-			font-size: 18px
+			font-size: 14px
 			li
 				display: inline-block
 				padding: 42px 10px
@@ -93,7 +97,7 @@ $red: #ff0000
 	display: inline-block
 	p
 		color: #fff
-		font-size: 18px
+		font-size: 16px
 		margin: 0
 		display: inline-block
 		vertical-align: middle
@@ -101,24 +105,26 @@ $red: #ff0000
 .order-button
 	color: #fff
 	background-color: $red
-	border-bottom: 3px solid darken($red, 10%)
+	border-bottom: 3px solid darken($red, 5%)
 	border-radius: 5px
 	display: block
 	padding: 5px 20px
 	margin: 10px 0 0
 	text-transform: uppercase
 	font-weight: bold
+	transition: all .2s
+	-webkit-transition: all .2s
 	&:hover, &:focus
-		background-color: darken($red, 10%)
+		background-color: darken($red, 5%)
 		border-bottom: 3px solid transparent
-		color: darken(#fff, 10%)
+		color: darken(#fff, 5%)
 		text-decoration: none
 .cart-div
 	display: inline-block
 	vertical-align: middle
 	color: #fff
 	text-align: center
-	margin: 0 0 0 30px 
+	margin: 0 0 0 10px 
 	position: relative
 	label
 		position: relative
@@ -137,11 +143,33 @@ $red: #ff0000
 			color: #666
 	p
 		margin: 20px 0 0
-		font-size: 18px
+		font-size: 16px
 		display: inline-block
 		padding: 0
+		a
+			color: #fff
+			padding: 17px 0
+			position: relative
+			transition: all .2s
+			-webkit-transition: all .2s
+			&:after
+				content: ''
+				position: absolute
+				width: 0
+				height: 5px
+				bottom: -5px
+				left: 0
+				background: transparent
+				transition: all .2s
+				-webkit-transition: all .2s
+			&:hover, &:focus
+				text-decoration: none
+				color: $red
+				&:after
+					background: $red
+					width: 100%
 	.price
-		background-color: lighten($black-blue, 10%)
+		background-color: lighten($black-blue, 5%)
 		padding: 5px 10px
 		margin-left: 10px
 .time
@@ -149,12 +177,16 @@ $red: #ff0000
 	position: absolute
 	right: 0px
 	top: 0
-	width: 40px
-	background-color: lighten($red, 10%)
+	width: 35px
+	background-color: lighten($red, 5%)
 	font-size: 18px
-	height: 112px
+	height: 111px
 	transition: all .2s
 	-webkit-transition: all .2s
+	overflow: hidden
+	border-bottom: 5px solid darken($red, 5%)
+	&:hover
+		background-color: darken($red, 5%)
 	&.active
 		width: 240px
 	&:before
@@ -162,6 +194,18 @@ $red: #ff0000
 		display: inline-block
 		height: 100%
 		vertical-align: middle
+	i
+		display: inline-block
+		padding: 0 5px
+		vertical-align: middle
+	p
+		display: inline-block
+		vertical-align: middle
+		margin: 0 10px
+.large-time
+	display: inline-block
+	color: #fff
+	margin: 0 20px
 	i
 		display: inline-block
 		padding: 0 10px
@@ -196,7 +240,7 @@ $red: #ff0000
 		&:last-child
 			border-bottom: 1px dashed transparent
 		i
-			color: lighten($red, 10%)
+			color: lighten($red, 5%)
 		a
 			display: inline-block
 			width: 90%
