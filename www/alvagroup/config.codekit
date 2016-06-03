@@ -29,6 +29,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/blue-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 215349,
+		"inputAbbreviatedPath": "\/img\/blue-bg.jpg",
+		"outputAbbreviatedPath": "\/img\/blue-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/favicon\/apple-touch-icon-114x114.png": {
 		"fileType": 32768,
 		"ignore": 0,

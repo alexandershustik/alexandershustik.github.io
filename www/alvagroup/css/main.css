@@ -255,6 +255,21 @@ body textarea:required:valid {
       vertical-align: top;
       color: #001a32;
       padding-left: 10px; }
+      .sub-menu-ul li a .fa-caret-down {
+        font-size: 20px;
+        padding: 0 5px; }
+
+.dropdown {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: none; }
+  .dropdown li {
+    padding: 10px 0 10px 40px; }
+    .dropdown li a {
+      padding: 0; }
+    .dropdown li i {
+      color: #001a32; }
 
 .side-block {
   background-color: #f6f6f6;
@@ -291,5 +306,28 @@ body textarea:required:valid {
       text-decoration: underline; }
       .side-block .side-block-all a:hover {
         color: #fe0000; }
+
+.content-container {
+  text-align: justify;
+  line-height: 2; }
+  .content-container .lead {
+    padding-left: 50px;
+    border-left: 5px solid #fe0000; }
+
+.blue-section {
+  background: url(../img/blue-bg.jpg) no-repeat center center;
+  background-size: cover;
+  min-width: 1200px;
+  padding: 100px 0 150px; }
+  .blue-section h1 {
+    margin-top: 0; }
+
+.slider-section {
+  background-color: #eee; }
+  .slider-section h3 {
+    margin: 0;
+    text-transform: uppercase;
+    padding: 20px 0;
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

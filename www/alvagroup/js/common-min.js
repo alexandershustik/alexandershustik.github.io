@@ -49,7 +49,10 @@ $(window).load(function() {
 $( document ).ready(function() {
 	$('.time').click(function(){
 		$('.time').toggleClass('active')
-	})
+	});
+	$(".dropdown-toggle").click(function(){
+		$(".dropdown").toggle("fast");
+	});
 });
 
 
