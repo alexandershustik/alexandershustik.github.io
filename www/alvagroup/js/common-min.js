@@ -53,6 +53,23 @@ $( document ).ready(function() {
 	$(".dropdown-toggle").click(function(){
 		$(".dropdown").toggle("fast");
 	});
+
+	$('.slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.description'
+	});
+	$('.description').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		asNavFor: '.slider',
+		arrows: false,
+		dots: true
+	});
+
+
 });
 
 
