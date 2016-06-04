@@ -323,7 +323,8 @@ body textarea:required:valid {
     margin-top: 0; }
 
 .slider-section {
-  background-color: #eee; }
+  background-color: #eee;
+  position: relative; }
   .slider-section h3 {
     margin: 0;
     text-transform: uppercase;
@@ -332,14 +333,17 @@ body textarea:required:valid {
   .slider-section .slider {
     text-align: center;
     position: relative; }
-    .slider-section .slider .description div {
-      display: inline-block; }
-    .slider-section .slider img {
+  .slider-section .description {
+    text-align: center;
+    position: relative;
+    height: 100px;
+    width: 900px;
+    margin: 0 auto; }
+    .slider-section .description div {
       display: inline-block;
-      width: 15%;
-      padding: 0 30px; }
-    .slider-section .slider .second-slide {
-      display: none; }
+      margin: 0 40px;
+      width: 300px;
+      vertical-align: middle; }
 
 .white-section {
   background: url(../img/white-bg.png) no-repeat center center;

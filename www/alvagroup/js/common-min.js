@@ -53,13 +53,22 @@ $( document ).ready(function() {
 	$(".dropdown-toggle").click(function(){
 		$(".dropdown").toggle("fast");
 	});
-	$(".second-desc").click(function(){
-		$(".second-slide").toggle();
-		$(".first-slide").toggle();
+
+	$('.slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		infinite: false,
+		dots: false,
+		asNavFor: '.slider-nav'
 	});
-	$(".first-desc").click(function(){
-		$(".second-slide").toggle();
-		$(".first-slide").toggle();
+	$('.slider-nav').slick({
+		slidesToShow: 1,
+		infinite: false,
+		slidesToScroll: 1,
+		asNavFor: '.slider',
+		centerMode: true,
+		focusOnSelect: true
 	});
 });
 
