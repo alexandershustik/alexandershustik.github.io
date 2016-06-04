@@ -46,6 +46,7 @@ $(window).load(function() {
 
 });
 
+$.noConflict();
 
 $(document).ready(function(){
 	$('.slider-for').slick({
